@@ -16,6 +16,7 @@ public class NetworkUtils {
     private static final String QUERY_PARAM = "q"; // Parameter for the search string
     private static final String MAX_RESULTS = "maxResults"; // Parameter that limits search results
     private static final String PRINT_TYPE = "printType";   // Parameter to filter by print type
+
     static String getBookInfo(String queryString){
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
@@ -27,12 +28,14 @@ public class NetworkUtils {
                     .appendQueryParameter(MAX_RESULTS, "10")
                     .appendQueryParameter(PRINT_TYPE, "books")
                     .build();
+
             URL requestURL = new URL(builtURI.toString());
             urlConnection = (HttpURLConnection) requestURL.openConnection();
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();
+
             InputStream inputStream = urlConnection.getInputStream();
-            StringBuffer buffer = new StringBuffer();
+            StringBuilder builder = new StringBuilder();
             if (inputStream == null) {
                 // Nothing to do.
                 return null;
@@ -40,19 +43,20 @@ public class NetworkUtils {
             reader = new BufferedReader(new InputStreamReader(inputStream));
             String line;
             while ((line = reader.readLine()) != null) {
-        /* Since it's JSON, adding a newline isn't necessary (it won't affect
-        parsing) but it does make debugging a *lot* easier if you print out the
-        completed buffer for debugging. */
-                buffer.append(line + "\n");
+        /*  Since it's JSON, adding a newline isn't necessary (it won't affect
+            parsing) but it does make debugging a *lot* easier if you print out the
+            completed buffer for debugging. */
+                builder.append(line + "\n");
             }
-            if (buffer.length() == 0) {
+            if (builder.length() == 0) {
                 // Stream was empty.  No point in parsing.
                 return null;
             }
-            bookJSONString = buffer.toString();
+            bookJSONString = builder.toString();
         } catch (IOException e) {
             e.printStackTrace();
             return null;
+
         } finally {
             if (urlConnection != null) {
                 urlConnection.disconnect();
@@ -64,7 +68,7 @@ public class NetworkUtils {
                     e.printStackTrace();
                 }
             }
-            Log.d(LOG_TAG, bookJSONString);
+            Log.d(LOG_TAG, "" + bookJSONString);
             return bookJSONString;
         }
     }

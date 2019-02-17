@@ -11,6 +11,7 @@ Week : 4
     d. MinimalistContentProvider for Number 4 part 1 : Lesson 11.1A Task 1  
     e. MinimalistContentProviderFinal and wordlistsqlwithcontentprovider for Number 4 part 2 : Lesson 11.1B Task 1  
     f. WordListClient and word_list_sql_with_content_provider for Number 4 part 3 : Lesson 11.1C Task 1  
+  
 2. My assumptions for this lessons are:  
     a. All the lessons are put in one folder, as last two week's exercise.  
     b. All the lessons are done without lessons learned.  
@@ -19,5 +20,5 @@ Week : 4
 # Author
 Kevin Andrian Liwinata  
 13516118  
-K1
+K1  
 Teknik Informatika

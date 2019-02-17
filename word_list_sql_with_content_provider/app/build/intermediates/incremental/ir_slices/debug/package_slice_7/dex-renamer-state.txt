@@ -1,0 +1,4 @@
+#Sun Feb 17 11:46:10 ICT 2019
+base.0=D\:\\Data From Disk C\\Semester 6\\IF3111 - PBD\\Tugas\\ADF - Practice\\Lesson7\\Task2\\week3_13516118\\word_list_sql_with_content_provider\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex

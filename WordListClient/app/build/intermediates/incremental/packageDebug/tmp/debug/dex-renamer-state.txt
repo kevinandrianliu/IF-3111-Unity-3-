@@ -1,0 +1,4 @@
+#Sun Feb 17 15:31:57 ICT 2019
+base.0=D\:\\Data From Disk C\\Semester 6\\IF3111 - PBD\\Tugas\\ADF - Practice\\Lesson7\\Task2\\WordListClient\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Feb 17 15:31:57 ICT 2019
+0.baseType=DIRECTORY
+0.base=D\:\\Data From Disk C\\Semester 6\\IF3111 - PBD\\Tugas\\ADF - Practice\\Lesson7\\Task2\\WordListClient\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.path=classes.dex
+0.set=DEX
+count=1

@@ -1,0 +1,4 @@
+#Sat Feb 16 21:00:25 ICT 2019
+base.0=D\:\\Data From Disk C\\Semester 6\\IF3111 - PBD\\Tugas\\ADF - Practice\\Lesson7\\Task2\\week3_13516118\\DroidCafe\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+path.0=classes.dex
+renamed.0=classes.dex

@@ -34,7 +34,7 @@ public final class Contract {
 
 
     public static final String AUTHORITY =
-            "com.android.example.wordlistclient.provider";
+            "com.android.example.wordlistsqlwithcontentprovider.provider";
 
     // Only one public table.
     public static final String CONTENT_PATH = "words";
